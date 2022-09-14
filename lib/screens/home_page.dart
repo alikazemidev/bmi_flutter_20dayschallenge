@@ -1,10 +1,8 @@
 import 'package:bmi_flutter_20dayschallenge/constants/style&color.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import '../widgets/icon_content.dart';
 import '../widgets/reusable_card.dart';
-import '../constants/style&color.dart';
 import 'result_page.dart';
 
 enum Gender {
