@@ -1,8 +1,17 @@
+import 'package:bmi_flutter_20dayschallenge/calculator_brain.dart';
 import 'package:bmi_flutter_20dayschallenge/constants/style&color.dart';
 import 'package:bmi_flutter_20dayschallenge/widgets/reusable_card.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatelessWidget {
+  final String bmi, bmiResult, bmiBodyText;
+
+  const ResultPage({
+    super.key,
+    required this.bmiResult,
+    required this.bmiBodyText,
+    required this.bmi,
+  });
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,15 +38,15 @@ class ResultPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
-                  'aaa',
+                  bmiResult,
                   style: kResultTextStyle,
                 ),
                 Text(
-                  '28.3',
+                  bmi,
                   style: kBMITextStyle,
                 ),
                 Text(
-                  'your bmi is noraml you can eat more food.',
+                  bmiBodyText,
                   textAlign: TextAlign.center,
                   style: kBodyTextStyle,
                 ),
